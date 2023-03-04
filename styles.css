@@ -1,0 +1,231 @@
+@font-face {
+    font-family: Hanken;
+    src: url(/assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Hanken;
+}
+
+p {
+    margin: 0;
+}
+
+.flex-container {
+    display: flex;
+}
+
+/* .section {
+    align-items: center;
+    justify-content: center;
+} */
+
+.placeholder {
+    flex-direction: column;
+}
+
+.left-container {
+    flex-direction: column;
+    /* background-color: hsl(252, 100%, 67%); */
+    background-color: hsl(241, 81%, 60%);
+    align-items: center;
+    justify-content: space-between;
+
+    /* height: 40vh; */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 24px;
+}
+
+.your-result {
+    color: hsl(241, 100%, 89%);
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.result-placeholder {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1) 60%, hsla(241, 72%, 46%, 0));
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+}
+
+.score {
+    font-size: 50px;
+    color: white;
+    font-weight: 800;
+}
+
+.out-of {
+    font-size: 18px;
+    color: hsl(241, 100%, 89%);
+    font-weight: 500;
+}
+
+.result-oneword {
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 15px 0 20px;
+}
+
+.result-oneliner {
+    font-size: 18px;
+    font-weight: 500;
+    color: hsl(241, 100%, 89%);
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+/*
+    Bottom container
+*/
+
+.right-container {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: stretch;
+}
+
+.summary {
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(224, 30%, 27%); 
+    margin-bottom: 30px;
+}
+
+.metrics {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: hsl(0, 0%, 89%);
+    margin: 10px 0 10px;
+    border-radius: 5px;
+}
+
+.left-part {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.left-part img {
+    padding-right: 10px;
+}
+
+.right-part {
+    color: hsl(241, 100%, 89%);
+}
+
+.reaction {
+    color: hsl(0, 100%, 67%);
+    background-color: hsl(0, 100%, 98%);
+}
+
+.memory {
+    color: hsl(39, 100%, 56%);
+    background-color: hsl(39, 100%, 98%);
+}
+
+.verbal {
+    color: hsl(166, 100%, 37%);
+    background-color: hsl(166, 100%, 98%);
+}
+
+.visual {
+    color: hsl(234, 85%, 45%);
+    background-color: hsl(234, 85%, 98%);
+}
+
+.highlighted-score {
+    color: hsl(224, 30%, 27%);
+    font-weight: 700;
+}
+
+.button {
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    border: none;
+    font-family: Hanken;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin-top: 18px;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: hsl(241, 81%, 54%);
+}
+
+@media screen and (min-width: 376px) {
+    .section {
+        align-items: center;
+        justify-content: center;  
+        height: 100vh;  
+    }
+    
+    .placeholder {
+        flex-direction: row;
+    }
+
+    .left-container {
+        flex: 1;
+        border-radius: 20px;
+        padding: 20px 40px;
+        max-width: 25vw;
+    }
+
+    .right-container {
+        flex: 1;
+    }
+
+    .result-oneword {
+        font-size: 32px;
+    }
+
+    .result-oneliner {
+        font-size: 20px;
+    }
+}
+
+/* - Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Light red: hsl(0, 100%, 67%)
+- Orangey yellow: hsl(39, 100%, 56%)
+- Green teal: hsl(166, 100%, 37%)
+- Cobalt blue: hsl(234, 85%, 45%)
+
+## Gradients
+
+- Light slate blue (background): hsl(252, 100%, 67%)
+- Light royal blue (background): hsl(241, 81%, 54%)
+
+- Violet blue (circle): hsla(256, 72%, 46%, 1)
+- Persian blue (circle): hsla(241, 72%, 46%, 0)
+
+
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Pale blue: hsl(221, 100%, 96%)
+- Light lavender: hsl(241, 100%, 89%)
+- Dark gray blue: hsl(224, 30%, 27%) */

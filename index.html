@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <link rel="stylesheet" href="./styles.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div role="main" class="section flex-container">
+    <div class="placeholder flex-container">
+      <div class="left-container flex-container">
+        <p class="your-result">Your Result</p>
+        <div class="result-placeholder flex-container">
+          <p class="score">76</p>
+          <p class="out-of">of 100</p>
+        </div>
+        <p class="result-oneword">Great</p>
+        <p class="result-oneliner">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </div>
+      <div class="right-container">
+        <p class="summary">Summary</p>
+
+        <div class="metrics reaction">
+          <div class="left-part">
+            <img src="./assets/images/icon-reaction.svg">
+            Reaction
+          </div>
+          <div class="right-part">
+            <span class="highlighted-score">80</span> / 100
+          </div>
+        </div>
+
+        <div class="metrics memory">
+          <div class="left-part">
+            <img src="./assets/images/icon-memory.svg">
+            Memory
+          </div>
+          <div class="right-part">
+            <span class="highlighted-score">92</span> / 100
+          </div>
+        </div>
+
+        <div class="metrics verbal">
+          <div class="left-part">
+            <img src="./assets/images/icon-verbal.svg">
+            Verbal
+          </div>
+          <div class="right-part">
+            <span class="highlighted-score">61</span> / 100
+          </div>
+        </div>
+
+        <div class="metrics visual">
+          <div class="left-part">
+            <img src="./assets/images/icon-visual.svg">
+            Visual
+          </div>
+          <div class="right-part">
+            <span class="highlighted-score">72</span> / 100
+          </div>
+        </div>
+        
+        <button class="button">Continue</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Shyam</a>.
+  </div>
+</body>
+</html>
